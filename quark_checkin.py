@@ -13,7 +13,7 @@ V1版-已失效
 Author: BNDou
 Date: 2024-03-15 21:43:06
 LastEditTime: 2025-05-23 13:01:27
-FilePath: \Auto_Check_In\checkIn_Quark.py
+FilePath: \Auto_Check_In\quark_checkin.py
 Description: 
 抓包流程：
     【手机端】
