@@ -22,7 +22,7 @@ except ImportError:
 
 # 配置项
 enshan_cookie = os.environ.get('ENSHAN_COOKIE', '')
-max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "600"))
+max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "900"))
 random_signin = os.getenv("RANDOM_SIGNIN", "true").lower() == "true"
 privacy_mode = os.getenv("PRIVACY_MODE", "true").lower() == "true"
 
