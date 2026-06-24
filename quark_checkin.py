@@ -29,7 +29,7 @@ except ImportError:
 
 # 配置项 - 同时兼容大写 QUARK_COOKIE 和小写 quark_cookie
 quark_cookie = os.environ.get('QUARK_COOKIE') or os.environ.get('quark_cookie', '')
-max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "600"))
+max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "900"))
 random_signin = os.getenv("RANDOM_SIGNIN", "true").lower() == "true"
 privacy_mode = os.getenv("PRIVACY_MODE", "true").lower() == "true"
 
