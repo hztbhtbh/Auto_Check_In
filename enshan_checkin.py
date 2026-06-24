@@ -69,7 +69,7 @@ def format_time_remaining(seconds):
     """格式化时间显示"""
     if seconds <= 0:
         return "立即执行"
-    hours, minutes = divmod(seconds, 3600)
+    hours, minutes = divmod(seconds, 1800)
     minutes, secs = divmod(minutes, 60)
     if hours > 0:
         return f"{hours}小时{minutes}分{secs}秒"
