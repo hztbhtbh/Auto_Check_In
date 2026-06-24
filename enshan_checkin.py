@@ -22,7 +22,7 @@ except ImportError:
 
 # 配置项
 enshan_cookie = os.environ.get('ENSHAN_COOKIE', '')
-max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "3600"))
+max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "1800"))
 random_signin = os.getenv("RANDOM_SIGNIN", "true").lower() == "true"
 privacy_mode = os.getenv("PRIVACY_MODE", "true").lower() == "true"
 
@@ -69,7 +69,7 @@ def format_time_remaining(seconds):
     """格式化时间显示"""
     if seconds <= 0:
         return "立即执行"
-    hours, minutes = divmod(seconds, 1800)
+    hours, minutes = divmod(seconds, 3600)
     minutes, secs = divmod(minutes, 60)
     if hours > 0:
         return f"{hours}小时{minutes}分{secs}秒"
