@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-cron "1 8 * * *" script-path=xxx.py,tag=匹配cron用
+cron "0 8 * * *" script-path=xxx.py,tag=匹配cron用
 new Env('nodeseek签到')
 """
 import os
@@ -205,7 +205,7 @@ if __name__ == "__main__":
     ns_random = os.getenv("NS_RANDOM", "true")
     
     # 随机签到时间窗口配置（秒）
-    max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "3600"))  # 默认1小时=3600秒
+    max_random_delay = int(os.getenv("MAX_RANDOM_DELAY", "600"))  # 默认1小时=3600秒
     random_signin = os.getenv("RANDOM_SIGNIN", "true").lower() == "true"
     
     # 读取Cookie（使用换行符分割，支持Cookie中包含&符号）
